@@ -80,3 +80,76 @@ header {
     cursor: pointer;
     position: relative;
 }
+#section-1 {
+    width: 100%;
+    height: 40rem;
+    background-image: url(/imgs/s1image.png);
+    background-size: cover;
+    displaY: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 1s ease-in-out
+}
+#section-1-desc-cont, #section-4-desc-cont {
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    padding: 0 0 0 40px;
+    border-bottom: 1px hidden gray;
+}
+#section-1-desc-cont p, #section-4-desc-cont p {
+    width: 60%;
+}
+h2 {
+    font-size: 3rem;
+}
+#section-1-desc-cont button, #section-4-desc-cont button{
+    width: 10%;
+    height: 25%;
+    background-color: #FFEB00;
+    border: none;
+    cursor: pointer
+}
+#section-1-slider-cont {
+    margin: 0 auto;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+#slider-indicators-cont {
+    display: flex;
+    width: 5%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#slider-arrows-cont {
+    display: flex;
+    width: 8%;
+    justify-content: space-between;
+    padding-right: 1rem
+}
+.arrow-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#slider-arrows-cont img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #9c9999c0;
+    border-radius: 50%;
+}
+.selected {
+    background-color: black;
+}
