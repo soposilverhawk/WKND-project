@@ -205,3 +205,46 @@ h2 {
     background-color: #FFEB00;
     cursor: pointer
 }
+#section-3 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    padding: 2.5rem 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+}
+#section-3 h3 {
+    height: 10%;
+    font-size: 2rem;
+    width: 26%;
+    border-bottom: 3px solid yellow;
+    margin-bottom: 2rem;
+}
+#cards-cont, #cards-cont-2 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.cards {
+    width: 256px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+.cards img {
+    width: 100%;
+    height: 60%;
+}
+.cards p {
+    font-weight: bold;
+}
+.cards p:nth-of-type(1) {
+    width: 70%;
+}
