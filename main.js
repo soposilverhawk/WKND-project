@@ -1,5 +1,6 @@
 const headerUlLi = document.getElementsByClassName("header-ul-li");
 const footerUlLi = document.getElementsByClassName("footer-ul-li");
+const infoForm = document.getElementById("s6-desc-input")
 
 for (let li of headerUlLi){
     li.addEventListener("mouseover", () => {
@@ -170,4 +171,26 @@ nextBtn.addEventListener("click", () => {
 
 previousBtn.addEventListener("click", () => {
     getPreviousImg(section1imgCollection)
+})
+
+const validateEmail = email => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email)
+}
+
+infoForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const emailInputValue = document.getElementById("email-input").value;
+    const section6DescContainer = document.getElementById("section-6-desc")
+    if(validateEmail(emailInputValue) === true) {
+        const successMsg = document.createElement("p");
+        successMsg.innerHTML = "You've successfully signed up"
+        successMsg.style.color = "green";
+        section6DescContainer.appendChild(successMsg);
+    } else {
+        const successMsg = document.createElement("p");
+        successMsg.innerHTML = "Please enter a valid email address"
+        successMsg.style.color = "red";
+        section6DescContainer.appendChild(successMsg);
+    }
 })

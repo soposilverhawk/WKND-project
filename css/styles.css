@@ -394,6 +394,9 @@ footer {
     margin: 0 auto;
     color: #909090;
 }
+#sign-up-btn {
+    cursor: pointer;
+}
 .sign-up {
     width: 20%;
     height: 50%;
