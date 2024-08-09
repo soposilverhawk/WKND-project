@@ -192,6 +192,5 @@ infoForm.addEventListener("submit", (e) => {
         successMsg.innerHTML = "Please enter a valid email address"
         successMsg.style.color = "red";
         section6DescContainer.appendChild(successMsg);
-        console.log("test")
     }
 })
